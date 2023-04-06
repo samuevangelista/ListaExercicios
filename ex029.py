@@ -6,4 +6,4 @@ else:
     print('O carro escedeu o limite de veocidade à {}Km/h.'.format(v))
     v = v - 80
     m = v * 7
-    print('Valor da multa a ser pago: R${},00'.format(m))
+    print('Valor da multa a ser pago: R${:.f}'.format(m))
