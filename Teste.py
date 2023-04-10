@@ -1,6 +1,1 @@
-a1 = float(input('Nota a1: '))
-a2 = float(input('Nota a2: '))
-m = a1 + (a2 * 2)
-a3 = (30 - m) / 2
-
-print('Faltam {} '.format(a3))
+print('O \033[0;33m primeiro valor\033[m é \033[0;34m maior\033[m')
