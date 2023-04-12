@@ -1,1 +1,4 @@
-print('O \033[0;33m primeiro valor\033[m é \033[0;34m maior\033[m')
+nome = input('askdfhjfakdjh[1]\n'
+      'wiuyqwiuyriuy[2]\n'
+      'dafisdufhadsf[3]\n'
+      'escolha: ')
