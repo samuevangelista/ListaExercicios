@@ -3,9 +3,9 @@ from time import sleep
 n = randint(1,3)
 print('=== JOKENPÔ ===')
 nn = int(input('-VAMOS JOGAR-\n'
-                    '|PEDRA|   [1]\n'
-                    '|PAPEL|   [2]\n'
-                    '|TESOURA| [3]\n'
+                    '[1] |PEDRA|   \n'
+                    '[2] |PAPEL|   \n'
+                    '[3] |TESOURA| \n'
                     '(Escolha): '))
 print('==============\n '
       'PROCESSANDO...\n'
