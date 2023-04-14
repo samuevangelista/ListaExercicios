@@ -5,7 +5,8 @@ idade = atual - ano
 print('Vc está com {}'.format(idade))
 if idade < 18:
     idade = 18 - idade
-    print('Você ainda deverá se alistar, daqui a {} ano'.format(idade))
+    atual = atual + idade
+    print('Você ainda deverá se alistar, daqui a {} ano em {}'.format(idade, atual))
 elif idade == 18:
     print('Está na hr de se alistar')
 else:
