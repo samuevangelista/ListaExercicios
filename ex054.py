@@ -1,9 +1,9 @@
 from datetime import date
 maior = 0
 menor = 0
+atual = date.today().year
 for c in range(1, 4):
-    ano = int(input('Ano de nascimento: '))
-    atual = date.today().year
+    ano = int(input('Em que ano a {}° pessoa nasceu? '.format(c)))
     idade = atual - ano
     if idade < 21:
         menor += 1

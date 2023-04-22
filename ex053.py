@@ -1,5 +1,12 @@
-frase = str(input('Digite uma frase: '))
-#print(frase.replace(" ", ""))
-print(' Você digitou: {}'.format(frase))
-invertida = ' '.join(palavra[::-1] for palavra in frase.split())
-print('A frase que você digitou invertida fica: {}'.format(invertida))
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = ''
+#inverso = junto[::-1]
+for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]
+print('O inverso de {} é {}'.format(junto, inverso))
+if inverso == junto:
+    print('temos um palindromo ')
+else:
+    print('A frase não é um palindromo')
