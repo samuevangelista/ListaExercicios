@@ -1,19 +1,19 @@
 from random import randint
-from time import sleep
-import os
 n=randint(0,5)#numero computador
-num = 7
+print('Tente adivinhar o número do computador')
+print('Escolha um numero entre 0 e 5! ')
 c = 0
-while num != n:
-    print('Tente adivinhar o número do computador')
-    num = int(input('Escolha um numero entre 0 e 5: '))
-    print('PROCESSANDO...')
-    sleep(1)
+acertou = False
+while not acertou:
+    num = int(input('Palpite: '))
+    c += 1
     if num == n:
         print('ACERTOU!')
+        acertou = True
     else:
-        print('ERROU!\nTente novamente')
-        sleep(2)
-        os.system("cls")
-    c +=1
+        if num < n:
+            print('Mais... Tente novamente')
+        elif num > n:
+            print('Menos... Tent novamente')
+
 print('Você precisou de {} tentativas para acertar'.format(c))

@@ -1,9 +1,9 @@
 import os
-from time import sleep
 c = 0
+num1 = int(input('Digite o 1° numero: '))
+num2 = int(input('Digite o 2° numero: '))
+
 while c != 5:
-    num1 = int(input('Digite o 1° numero: '))
-    num2 = int(input('Digite o 2° numero: '))
     c = int(input('[ 1 ] Somar\n'
                '[ 2 ] Multiplicar\n'
                '[ 3 ] Maior\n'
@@ -22,7 +22,13 @@ while c != 5:
         else:
             print('Os numeros são iguais')
     elif c == 4:
+        print('Informe os numeros novamente')
+        num1 = int(input('Digite o 1° numero: '))
+        num2 = int(input('Digite o 2° numero: '))
         os.system("cls")
-
-
+    elif c == 5:
+        print('Finalizando...')
+    else:
+        print('Opção inválida')
+    print('=-=' * 10)
 print('Programa Encerrado')
