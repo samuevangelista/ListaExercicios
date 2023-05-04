@@ -1,0 +1,2 @@
+tabela = ('Botafogo', 'Fortaleza', 'Palmeiras', 'Internacional', 'Fluminense', 'Cruzeiro', 'Grêmio', 'São Paulo', 'Vasco da Gama', 'Atlético-MG', 'Santos', 'Bragantino', 'Flamengo', "Athletico-PR", 'Bahia', 'Goiás', 'Corinthians', 'Cuiabá', 'Coritiba', 'América-MG')
+print(f'Lista dos times do Brasileirão: {tabela}')
