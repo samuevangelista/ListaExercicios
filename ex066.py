@@ -1,4 +1,4 @@
-cont = s = n = 0
+cont = s = 0
 while True:
     n = int(input('Digite um valor (999 p/ parar): '))
     if n == 999:

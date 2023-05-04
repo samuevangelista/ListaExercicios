@@ -1,17 +1,17 @@
 maioridade = homens = menosvinte = 0
 while True:
-    sexo = continuar = 'j'
+    sexo = continuar = ' '
     print('-'*20)
     print('CADATRE UMA PESSOA')
     print('-'*20)
     idade = int(input('Idade: '))
     while sexo not in 'MF':
-        sexo = str(input('Sexo: [M/F] ')).upper().strip()
+        sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
     print('-'*20)
     while continuar not in 'SN':
-        continuar = str(input('Quer continuar? [S/N] ')).upper().strip()
+        continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
 
-    if idade > 18:
+    if idade >= 18:
         maioridade += 1
     if sexo == 'M':
         homens += 1

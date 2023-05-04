@@ -6,7 +6,9 @@ while True:
     print('=-' * 15)
     comp = randint(0, 5)  # numero computador
     valor = int(input('Diga um valor: '))
-    escolha = str(input('Par ou Ímpar? [P/I] ')).upper().strip()
+    escolha = ' '
+    while escolha not in 'PI':
+        escolha = str(input('Par ou Ímpar? [P/I] ')).strip().upper()[0]
     print('-'*30)
     resto = (valor + comp) % 2
     if resto == 1:
