@@ -1,4 +1,3 @@
-nome = input('askdfhjfakdjh[1]\n'
-      'wiuyqwiuyriuy[2]\n'
-      'dafisdufhadsf[3]\n'
-      'escolha: ')
+valores = [5, 2, 6, 0, 4]
+valores.sort()
+print(valores)
